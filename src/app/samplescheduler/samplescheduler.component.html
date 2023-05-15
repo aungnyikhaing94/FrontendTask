@@ -1,0 +1,15 @@
+<br>
+
+<div style="border: 1px solid burlywood;padding: 10px">
+  selected item IDs: {{ selectedKeys | json }}
+</div>
+
+<br>
+
+<kendo-scheduler [kendoSchedulerBinding]="events" [selectedDate]="selectedDate" style="height: 600px;"
+  (eventClick)="onEventClick($event)" [eventClass]="getEventClass" [eventStyles]="getEventStyles" [slotDivisions]="1" >
+  <ng-template kendoSchedulerDateHeaderTemplate let-date="date">
+    <strong>{{ date | date: 'dd-MM-yy' }}</strong>
+  </ng-template>
+  <kendo-scheduler-week-view startTime="09:00"></kendo-scheduler-week-view>
+</kendo-scheduler>

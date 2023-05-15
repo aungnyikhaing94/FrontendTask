@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+.k-event .k-event-template,
+.k-event .k-event-template {
+    text-align: center;
+}
+
+.k-event.k-selected{
+    background-color: blue;
+}
+
+.column-span-2.k-event {
+    width: 27% !important;
+}
+
+.k-scheduler-navigation, .k-scheduler-toolbar {
+    display: none !important;
+  }
