@@ -4,14 +4,20 @@
     text-align: center;
 }
 
-.k-event.k-selected{
+/* .k-event.k-selected {
     background-color: blue;
-}
+} */
 
-.column-span-2.k-event {
+.column-span.k-event {
     width: 27% !important;
 }
 
-.k-scheduler-navigation, .k-scheduler-toolbar {
+.k-scheduler-navigation,
+.k-scheduler-toolbar {
     display: none !important;
-  }
+}
+
+.rowSelector {
+    cursor: pointer;
+    padding: 8px;
+}
